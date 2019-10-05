@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+  background-color: #121e55;
+}
+
+#side-nav {
+  background-color: #020330;
+  height: 100%;
+  position: fixed;
+  width: 200px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#main {
+  background-color: #121e55;
+  color: #bbbbbb;
+  margin-left: 200px;
+  overflow-x: hidden;
+  padding: 0px 10px;
+}
+
+.page-title {
+  text-align: center;
+}
+.page-title .title-text {
+  font-size: 45px;
+  color: #bbbbbb;
+  padding: 30px;
+}
+.page-title .title-text .name {
+  font-weight: bold;
+}
+.page-title .title-text .tick {
+  font-weight: bold;
+}
+
+.page-name .title-text {
+  font-size: 45px;
+  color: #bbbbbb;
+  padding: 30px;
+}
+.page-name .title-text .name {
+  font-weight: bold;
+}
+.page-name .title-text .tick {
+  font-weight: bold;
+}
+
+.pic {
+  text-align: center;
+}
+.pic .my-pic {
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+  background-color: #121e55;
+}
+
+.is-medium {
+  text-align: center;
+  font-size: large;
+}
+
+.content {
+  padding: 20px 56px;
+}
+.content li {
+  color: #bd0716;
+}
+.content .content-title,
+.content .subtitle,
+.content .email {
+  text-align: center;
+}
+
+.nav-link {
+  color: #bbbbbb;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-link:hover {
+  background-color: #121e55;
+  color: #bd0716;
+}
+
+.social-list {
+  text-align: center;
+}
+.social-list .social {
+  margin: 20px;
+  width: 48px;
+  height: 48px;
+}
+.social-list .social:hover {
+  width: 56px;
+  height: 56px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-item {
+  height: 300px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.blog-item .embedly-card {
+  background-color: #bbbbbb;
+}
+
+.logo {
+  width: 200px;
+  height: 220px;
+  padding: 15px;
+}
+.logo .logo-img {
+  width: 170px;
+  height: 190px;
+}
+
+/*# sourceMappingURL=style0.css.map */

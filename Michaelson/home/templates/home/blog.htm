@@ -1,0 +1,27 @@
+{% extends "home/base.htm" %} {% load staticfiles %} {% block title %} Blog {% endblock %} {% block body %}
+<div class="page-name">
+    <h1 class="title-text">
+        Blog
+    </h1>
+</div>
+<section>
+    <section>
+
+    </section>
+    <section class="row">
+        {% for post in blogPosts %}
+        <div class="col-lg-3 col-sm-6">
+            <div class="blog-item">
+                <blockquote class="embedly-card">
+                    <h4><a href="{{ post.url }}">{{ post.txt }}</a></h4>
+                </blockquote>
+                <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+#main {
+  background-color: white;
+  height: 100%;
+}
+
+.title-text {
+  font-size: 45px;
+  color: red;
+  text-align: center;
+  padding: 30px;
+}
+.title-text .name {
+  font-weight: bold;
+}
+.title-text .tick {
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+}
+
+.my-pic {
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+}
+
+.is-medium {
+  text-align: justify;
+  font-size: medium;
+  float: center;
+}
+
+/*# sourceMappingURL=style.css.map */

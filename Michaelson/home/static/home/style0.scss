@@ -1,0 +1,132 @@
+$color0: rgb(187, 187, 187);
+$color1: rgb(18, 30, 85);
+$color2: rgb(189, 7, 22);
+$color3: rgb(2, 3, 48);
+html,
+body {
+    height: 100%;
+    background-color: $color1;
+}
+
+#side-nav {
+    background-color: $color3;
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#main {
+    background-color: $color1;
+    color: $color0;
+    margin-left: 200px;
+    overflow-x: hidden;
+    padding: 0px 10px;
+}
+
+.page-title {
+    text-align: center;
+    .title-text {
+        font-size: 45px;
+        color: $color0;
+        padding: 30px;
+        .name {
+            font-weight: bold;
+        }
+        .tick {
+            font-weight: bold;
+        }
+    }
+}
+
+.page-name {
+    .title-text {
+        font-size: 45px;
+        color: $color0;
+        padding: 30px;
+        .name {
+            font-weight: bold;
+        }
+        .tick {
+            font-weight: bold;
+        }
+    }
+}
+
+.pic {
+    text-align: center;
+    .my-pic {
+        display: inline-block;
+        width: 200px;
+        height: 220px;
+        background-color: $color1;
+    }
+}
+
+.is-medium {
+    text-align: center;
+    font-size: large;
+}
+
+.content {
+    padding: 20px 56px;
+    li {
+        color: $color2;
+    }
+    .content-title,
+    .subtitle,
+    .email {
+        text-align: center;
+    }
+}
+
+.nav-link {
+    color: $color0;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav-link:hover {
+    background-color: $color1;
+    color: $color2
+}
+
+.social-list {
+    text-align: center;
+    .social {
+        margin: 20px;
+        width: 48px;
+        height: 48px;
+    }
+    .social:hover {
+        width: 56px;
+        height: 56px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.blog-item {
+    height: 300px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    .embedly-card {
+        background-color: $color0;
+    }
+}
+
+.logo {
+    width: 200px;
+    height: 220px;
+    padding: 15px;
+    .logo-img {
+        width: 170px;
+        height: 190px;
+    }
+}

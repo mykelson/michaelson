@@ -1,0 +1,48 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'home/style0.css' %}">
+
+</head>
+
+<body>
+    <header id="side-nav">
+        <div class="logo">
+            <a href="{% url 'home:index' %}">
+                <img class="logo-img" src="/media/home/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home:about' %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Quickie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home:blog' %}">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home:vlog' %}">Vlog</a>
+            </li>
+
+        </ul>
+    </header>
+    <section id="main">
+        {% block body %} {% endblock%}
+    </section>
+
+</body>
+
+</html>
