@@ -1,6 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: sqlite
+  
+  migration:
+    build: .
+    command: python3 manage.py migrate
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+
 build:
   docker:
     web: Dockerfile
+
 release:
   image: web
   command:
